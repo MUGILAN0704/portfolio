@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+
+
+}
+/* desktop */
+nav,.nav-links{
+    display: flex;
+
+}
+nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+.nav-links{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+.nav-links a{
+    color:black;
+    text-decoration: none;
+    text-decoration-color:white ;
+}
+.nav-links a:hover{
+    color: gray;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+.logo{
+    font-size: 2rem;
+
+}
+.logo:hover{
+    cursor: default;
+}
+/* hamburger */
+#hamburger-nav{
+    display: none;
+
+}
+.hamburger-menu{
+    position:relative;
+    display: inline-block;
+}
+.hamburger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor:pointer;
+}
+.menu-links a{
+    color:black;
+    text-decoration: none;
+    text-decoration-color:white ;
+}
+.hamburger-icon span{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+
+}
+.menu-links{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+   
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+.menu-links a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+.menu-links li{
+    list-style: none;
+}
+.menu-links.open{
+    max-height: 300px;
+
+}
+.hamburger-icon.open span:first-child{
+    transform: rotate(45deg) translate(10px,-5px);
+}
+.hamburger-icon.open span:nth-child(2){
+    opacity: 0;
+}
+.hamburger-icon.open span:last-child{
+    transform: rotate(-45deg) translate(10px,-5px);
+}
+.hamburger-icon span:first-child{
+    transform: none;
+}
+.hamburger-icon span:first-child{
+    opacity: 1;
+}
+.hamburger-icon span:first-child{
+    transform: none;
+}
+
+/* ....section... */
+#profile{
+    display: flex;
+    justify-content: center;
+    gap:10rem;
+    height:auto;
+    width: 100%;
+    margin-top: 2.9rem;
+    margin-bottom: 2.9rem;
+   
+}
+
+.section_pic-container img{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+
+}
+.section_pic-container img{
+    animation:imgg 2s ease-in-out infinite;
+    animation-delay: 2s;
+}
+@keyframes imgg{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+
+.section_text{
+    align-self: center;
+    text-align: center;
+}
+.section_text p{
+    font-weight: 600;
+}
+.section_text_p1{
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+
+}
+.section_text_p2{
+    font-size: 1.14rem;
+}
+.title{
+    font-size: 3rem;
+    text-align: center;
+    
+}
+#social-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+.icon i{
+    font-size: 2rem;
+    color:black;
+    cursor: pointer;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+}
+.btn-container .button2,.button1{
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 0.9rem;
+    width: 8rem;
+    border-radius: 2rem;
+    border: rgb(53,53,53) 0.1rem solid;
+}
+.btn-container .button1:hover,.button2:hover{
+    cursor: pointer;
+}
+.btn-container .button1:hover,.button2{
+background-color:rgb(53,53,53);
+color: white;
+}
+.button2:hover{
+    background-color:rgb(0,0,0);
+}
+.button1{
+    background: none;
+}
+.button1:hover{
+    border: rgb(255,255,255) 0.1rem solid;
+
+}
+
+/* ...about... */
+
+#about{
+    gap: 5rem;
+    height:auto;
+    margin-bottom: 3rem;
+  
+}
+.about-connect{
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin: 2rem;
+}
+.about-container{
+    display: inline-block;
+}
+.about-container img{
+    height: 400px;
+    width: 400px;
+}
+.about-detials{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.connection{
+    display: flex;
+    gap: 4rem;
+    height: 80%;
+}
+.about-connect{
+    display: flex;
+}
+
+.certificate,.Education{
+    padding: 1rem;
+    flex: 1;
+    background-color: white;
+    border-radius: 2rem; 
+    border: rgb(53,53,53) 0.1rem solid;
+    text-align: center;
+}
+#about .section_text_p1{
+    text-align: center;
+    font-size: 1.20rem;
+    margin-bottom: 0.4rem;
+    
+}
+.certificate .icon i{
+    font-size: 1.5rem;
+    color:black;
+    cursor: pointer;
+}
+.Education .icon i{
+    font-size: 1.5rem;
+    color:black;
+    cursor: pointer;
+}
+.about-para p{
+    text-align: justify;
+    margin: 1rem;
+    padding-top: 1rem;
+}
+
+/* ...skills... */
+
+.skills{
+    gap: 5rem;
+    height: 20vh;
+    width: 100%;
+  
+}
+.skills p{
+    text-align: center;
+    font-size: 1.20rem;
+    margin-bottom: 0.4rem;
+    
+}
+.part{
+   display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 2.5rem;
+    padding: 20px;
+    
+}
+.part .one{
+    background:url(./img/skills.jpeg);
+    height: 200px;
+    width: 350px;
+     width: 100%;
+     color: white;
+     text-align: center;
+     padding-top:3rem;
+     border-radius:1rem;
+     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.one i{
+    font-size: 5rem;
+}
+.one p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+}
+
+.part .two{
+    background:url(./img/skills.jpeg);
+    height: 200px;
+    width: 350px;
+     width: 100%;
+     color: white;
+     text-align: center;
+     padding-top:3rem;
+     border-radius:1rem;
+     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.two i{
+    font-size: 5rem;
+}
+.two p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+}
+.part .three{
+    background:url(./img/skills.jpeg);
+    height: 200px;
+    width: 350px;
+     width: 100%;
+     color: white;
+     text-align: center;
+     padding-top:3rem;
+     border-radius:1rem;
+     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.three i{
+    font-size: 5rem;
+}
+.three p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+}
+
+.part .four{
+    background:url(./img/skills.jpeg);
+    height: 200px;
+    width: 350px;
+     width: 100%;
+     color: white;
+     text-align: center;
+     padding-top:3rem;
+     border-radius:1rem;
+     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.four i{
+    font-size: 5rem;
+}
+.four p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+}
+.part .five{
+    background:url(./img/skills.jpeg);
+    height: 200px;
+    width: 350px;
+     width: 100%;
+     color: white;
+     text-align: center;
+     padding-top:3rem;
+     border-radius:1rem;
+     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.five i{
+    font-size: 5rem;
+}
+.five p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+}
+.part .six{
+    background:url(./img/skills.jpeg);
+    height: 200px;
+    width: 350px;
+     width: 100%;
+     color: white;
+     text-align: center;
+     padding-top:3rem;
+     border-radius:1rem;
+     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+     
+}
+.six i{
+    font-size: 5rem;
+}
+.six p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+}
+
+
+/* ...projects... */
+
+.project{
+    padding: 3rem;
+      height:auto;
+    
+  }
+  .project p{
+      text-align: center;
+      font-size: 1.20rem;
+      margin-bottom: 0.4rem;
+  }
+  .project .title{
+    padding-bottom: 30px;
+  }
+  .project-container{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      align-items: center;
+      gap: 2.5rem;
+  }
+  .project-box img{
+      width: 100%;
+      transition: .5s ease;
+  }
+  .project-box:hover img{
+      transform: scale(1.1);
+  }
+  .project-container .project-box{
+      position: relative;
+      border-radius: 2rem;
+      box-shadow: 0 0 1rem var(--bg-color);
+      overflow: hidden;
+      display: flex;
+  }
+  .project-box .project-layer{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url(./img/WhatsApp\ Image\ 2024-01-01\ at\ 8.22.32\ PM.jpeg);
+      object-fit: cover;
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      flex-direction:column;
+      text-align: center;
+      padding:0 4rem;
+      color: white;
+      transform: translateY(100%);
+      transition: .3s ease;
+  
+  }.project-box:hover .project-layer{
+      transform: translateY(0);
+  
+  }
+  .project-layer h4{
+      font-size: 3rem;
+  }
+  .project-layer h6{
+      font-size: 1.1rem;
+      margin: .3rem 0 1rem;
+      padding-bottom: 1.5rem;
+  }
+  .project-layer a{
+      display: inline-block;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 4rem;
+      height: 4rem;
+      padding-top: 1.2rem;
+      background-color: white;
+      border-radius: 50%;
+  }
+  .project-layer a i{
+      font-size: 1.5rem;
+      color: black;
+      align-items: center;
+      
+  }
+
+  /* contact */
+.contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height:619px;
+}
+.contact-container{
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53,53,53)0.1rem solid;
+    border-color: rgb(163,163,163);
+    background: rgb(250,250,250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+
+}
+
+.contact .skills-text{
+    text-align: center;
+    font-size: 1.20rem;
+    margin-bottom: 0.4rem;
+}
+
+
+.contact-info a{
+    text-decoration: none;
+    color: black;
+}
+.contact-info{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+.con-p{
+    font-size: larger;
+    margin-bottom: 0;
+    
+}
+.con-icon i{
+    cursor: default;
+    font-size: 2rem;
+    color:black;
+       
+   
+}
+

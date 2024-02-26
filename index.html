@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Untitled-1.css" type="text/css">
+    <link rel="stylesheet" href="./media.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+<body>
+    <nav id="dekstop-nav">
+        <div class="logo">Mu</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Mu</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="menu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="menu()">About</a></li>
+                <li><a href="#skills" onclick="menu()">Skills</a></li>
+                <li><a href="#project" onclick="menu()">Projects</a></li>
+                <li><a href="#contact" onclick="menu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./img/CC_20231231_214809.png" alt="mugilan profile">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello,I'm</p>
+            <h1 class="title">Mugilan</h1>
+            <p class="section_text_p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button class="button1"  onclick="window.open('./asset/Resume (1).pdf')">
+                    Downlode cv
+                </button>
+
+                <button class="button2"  onclick="location.href='#contact'">
+                    Contact Info
+                </button>
+
+            </div>
+            <div id="social-container">
+                <div class="icon" onclick="location.href='https://www.linkedin.com/feed/'"><i class="fa-brands fa-linkedin"></i></div>
+                <div class="icon" onclick="location.href='https://github.com/MUGILAN0704'"><i class="fa-brands fa-github"></i></div>
+                <div class="icon" onclick="location.href='https://www.instagram.com/'"><i class="fa-brands fa-square-instagram"></i></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- /* ...about... */  -->
+
+    <section id="about">
+    <p class="section_text_p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="connection">
+    <div class="about-container">
+        <img class="about-pic" src="./img/CC_20231231_214954.png" alt="profile">
+    </div>
+    <div class="about-detials">
+        <div class="about-connect">
+        <div class="certificate">
+            <div class="icon"><i class="fa-solid fa-certificate"></i></div>
+            <h3>certificate</h3>
+            <p>Frontend Developer</p>
+            
+        </div>
+        <div class="Education">
+            <div class="icon"><i class="fa-solid fa-award"></i></div>
+            <h3>Education</h3>
+            <p>Bachelor of Computer Application (BCA)</p>
+            
+        </div>
+    </div>
+         <div class="about-para">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolorem earum deserunt consectetur sequi dolor, aspernatur possimus temporibus aliquid veniam perferendis rem facilis quia expedita! Numquam nobis cum tempore quod.</p>
+
+        </div>
+        
+    </div>
+</div>
+    </section>
+
+  <!-- /* ...about... */  -->
+
+    <div class="skills" id="skills">
+        <p class="skills-text">Explore My</p>
+        <h1 class="title">My Skills</h1>
+    
+     </div>
+
+    
+        <div class="part">
+          
+            <div class="one">
+            <i class="fa-brands fa-html5"></i>
+            <p>HTML</p>
+             </div>
+            <div class="two">
+             <i class="fa-brands fa-css3-alt"></i>
+             <p>CSS</p>
+            </div>
+            <div class="three">
+            <i class="fa-brands fa-bootstrap"></i>
+            <p>BOOTSTRAP</p>
+            </div>
+            <div class="four">
+            <i class="fa-brands fa-js"></i>
+            <p>JAVASCRIPT</p>
+            </div>
+            <div class="five">
+            <i class="fa-brands fa-react"></i>
+            <p>REACT</p>
+            </div>
+            <div class="six">
+            <i class="fa-brands fa-github"></i>
+            <p>GIT</p>
+            </div>
+     
+
+   
+     </div>
+
+     <!-- /* ...project... */  -->
+
+     <div class="project" id="project">
+        <p class="project-text">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="project-container">
+            <div class="project-box">
+                <img src="./img/p1 (6).jpg" alt="">
+                <div class="project-layer">
+                    <h4>web design</h4>
+                    <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h6>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <img src="./img/p1 (5).jpg" alt="">
+                <div class="project-layer">
+                    <h4>web design</h4>
+                    <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h6>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <img src="./img/p1 (4).jpg" alt="">
+                <div class="project-layer">
+                    <h4>web design</h4>
+                    <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h6>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <img src="./img/p1 (3).jpg" alt="">
+                <div class="project-layer">
+                    <h4>web design</h4>
+                    <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h6>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <img src="./img/p1 (2).jpg" alt="">
+                <div class="project-layer">
+                    <h4>web design</h4>
+                    <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h6>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <img src="./img/p1 (1).jpg" alt="">
+                <div class="project-layer">
+                    <h4>web design</h4>
+                    <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h6>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- /* ...contact... */  -->
+
+     <footer class="contact" id="contact">
+        <p class="skills-text">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="con-icon "><i class="fa-solid fa-square-envelope"></i></div>
+                <p class="con-p"><a href="mailto:mugilanmugi9523@gmail.com">mugilanmugi9523@gmail.com</a></p>
+
+            </div>
+            <div class="contact-info">
+             
+                    <div class="con-icon" href="#"><i class="fa-brands fa-linkedin"></i></div>
+                    <p class="con-p"><a href="https://in.linkedin.com/"></a>Linkedin</p>
+    
+                </div>
+            </div>
+        </footer>
+
+     <script src="./index.js"></script>
+</body>
